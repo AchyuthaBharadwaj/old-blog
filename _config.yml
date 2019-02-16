@@ -1,0 +1,41 @@
+# Site settings
+title: Achyutha Bharadwaj
+description: 'Oh hey - Welcome to my blog!! I’m an ASP .NET Full-stack web developer. I’m currently pursuing Masters degree in Computer Science at Arizona State University. I am into Coding, Cooking, Watching Anime and Playing games on Steam.'
+url: 'https://achyuthabharadwaj.github.io'
+baseurl: '/old-blog'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Achyutha Bharadwaj'
+  email: achyuthabharadwaj1992@gmail.com
+  github_username:  AchyuthaBharadwaj
+  linkedin_username:  achyutha-bharadwaj
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png', 'vendor']
