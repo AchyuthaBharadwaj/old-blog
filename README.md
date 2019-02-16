@@ -1,3 +1,3 @@
 # Achyutha's Blog
 
-live: https://achyuthabharadwaj.github.io/
+live: https://achyuthabharadwaj.github.io/old-blog
